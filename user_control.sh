@@ -47,7 +47,7 @@ function write_log() {
 
 ###################################################
 # Main code
-#
+# test
 
 load_timetable $TIMETABLE_FILE
 
