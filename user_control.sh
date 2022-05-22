@@ -2,6 +2,7 @@
 
 TIMETABLE_FILE="timetable.csv"
 
+USER_NAME='alex'
 
 function load_timetable() {
 
@@ -14,7 +15,7 @@ function load_timetable() {
 
     while read mon tue wed thu fri sat sun 
     do
-        if [ $CNT -gt 1 ]; then
+        if [ $CNT -eq 2 ]; then
             echo "Mon: $mon"
             echo "Tue: $tue"
             echo "Wed: $wed"
@@ -26,6 +27,22 @@ function load_timetable() {
             CNT=$(($CNT+1))
         fi
     done < $1
+}
+
+function lock_user() {
+    usermod --expiredate 1 $USER_NAME
+}
+
+function unlock_user() {
+    usermod --expiredate -1 $USER_NAME
+}
+
+function check_login_time() {
+
+}
+
+function write_log() {
+    
 }
 
 ###################################################
