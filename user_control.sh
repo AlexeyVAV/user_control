@@ -48,8 +48,9 @@ function write_log() {
 ###################################################
 # Main code
 # 
-# crontab
-# echo "*/5 * * * * /root/workplace/user_control/git pull" |crontab
+# crontab every 5 mins
+# echo "*/5 * * * * cd /root/workplace/user_control && /usr/bin/git pull" |crontab
+# */5 * * * * cd /root/workplace/user_control && /usr/bin/git pull
 #
 #
 
