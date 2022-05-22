@@ -47,7 +47,11 @@ function write_log() {
 
 ###################################################
 # Main code
-# test
+# 
+# crontab
+# echo "*/5 * * * * /root/workplace/user_control/git pull" |crontab
+#
+#
 
 load_timetable $TIMETABLE_FILE
 
