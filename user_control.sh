@@ -53,6 +53,14 @@ function write_log() {
 # */5 * * * * cd /root/workplace/user_control && /usr/bin/git pull
 #
 #
+# alexey@alexey-hp:~$ last |grep "May 22"
+# alexey   pts/0        192.168.1.13     Sun May 22 19:07   still logged in
+# alex     :0           :0               Sun May 22 15:41   still logged in
+# reboot   system boot  5.13.0-41-generi Sun May 22 15:40   still running
+# alexey   pts/0        192.168.1.13     Sun May 22 11:23 - 12:47  (01:24)
+# alex     :0           :0               Sun May 22 09:56 - down   (02:51)
+# reboot   system boot  5.13.0-41-generi Sun May 22 09:55 - 12:47  (02:52)
+# last | grep \"`date +"%b %d"`\"
 
 load_timetable $TIMETABLE_FILE
 
