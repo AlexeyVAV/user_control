@@ -58,11 +58,11 @@ function unlock_user() {
 }
 
 function check_login_time() {
-
+    echo "check login time"
 }
 
 function write_log() {
-    
+    echo "write log file"
 }
 
 ###################################################
