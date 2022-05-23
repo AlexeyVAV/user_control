@@ -29,6 +29,20 @@ function load_timetable() {
     done < $1
 }
 
+function create_log_file() {
+    touch `date +"%Y-%m-%d"`.log
+}
+
+function check_log_file() {
+    if [ -f `date +"%Y-%m-%d"`.log ]
+    then 
+        echo "exists"
+    else 
+        echo "don't"
+    fi
+}
+
+
 # 1. lock the account
 function lock_user() {
     usermod --expiredate 1 $USER_NAME
