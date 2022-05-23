@@ -29,8 +29,14 @@ function load_timetable() {
     done < $1
 }
 
+# 1. lock the account
 function lock_user() {
     usermod --expiredate 1 $USER_NAME
+}
+
+# 2. shutdown PC
+function power_down() {
+    shutdown -h now
 }
 
 function unlock_user() {
