@@ -19,4 +19,4 @@ root@alexey-hp:~/workplace/user_control# crontab -l
 #
 @reboot /root/workplace/user_control/user_control.sh
 #
-*/15 * * * * /root/workplace/user_control/ip_check.sh
+*/5 * * * * /root/workplace/user_control/ip_check.sh
