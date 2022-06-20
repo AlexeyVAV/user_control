@@ -83,6 +83,7 @@ function write_log() {
 # reboot   system boot  5.13.0-41-generi Sun May 22 09:55 - 12:47  (02:52)
 # last | grep \"`date +"%b %d"`\"
 
+# procedure example use
 # load_timetable $TIMETABLE_FILE
 
 if [ -f `date +"%Y-%m-%d"`.log ]
