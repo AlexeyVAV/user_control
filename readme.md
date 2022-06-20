@@ -11,6 +11,7 @@ root@alexey-hp:~/workplace/user_control# crontab -l
 @reboot /root/workplace/user_control/user_control.sh
 
 #########
+# last crontab settings on 19.06.2022
 root@alexey-hp:~/workplace/user_control# crontab -l
 */5 * * * * cd /root/workplace/user_control && /usr/bin/git pull
 # lock user

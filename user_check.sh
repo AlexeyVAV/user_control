@@ -22,3 +22,5 @@ if [ `date +"%H%M"` -gt $DEAD_TIME ];
 else 
     echo "less than Dead Time";
 fi
+
+exit 0
