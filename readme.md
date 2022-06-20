@@ -20,3 +20,11 @@ root@alexey-hp:~/workplace/user_control# crontab -l
 @reboot /root/workplace/user_control/user_control.sh
 #
 */5 * * * * /root/workplace/user_control/ip_check.sh
+
+### Check time
+if [ `date +"%H%M"` -gt 1415 ]; 
+    then 
+    echo "greater";
+else 
+    echo "less";
+fi
