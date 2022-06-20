@@ -29,3 +29,15 @@ if [ `date +"%H%M"` -gt 1415 ];
 else 
     echo "less";
 fi
+
+
+#########
+# New crontab settings on 20.06.2022 not implemented
+root@alexey-hp:~/workplace/user_control# crontab -l
+*/5 * * * * cd /root/workplace/user_control && /usr/bin/git pull
+# lock user
+*/5 * * * * cd /root/workplace/user_control/user_check.sh
+#
+@reboot /root/workplace/user_control/user_control.sh
+#
+*/5 * * * * /root/workplace/user_control/ip_check.sh
